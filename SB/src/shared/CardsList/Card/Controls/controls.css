@@ -1,0 +1,135 @@
+
+.controls {
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    order: 0;
+    transition: 0.5s;
+}
+
+.karmaCounter > * + * {
+    padding: 0 0 0 4px;
+}
+
+.karmaValue {
+    color: var(--black);
+}
+
+svg.down {
+    transform: rotate(180deg);
+}
+
+.commentsButton {
+    display: flex;
+    align-items: normal;
+}
+
+.commentsButton {
+    color: var(--black);
+}
+
+.commentsNumber {
+    padding: 0 0 0 6px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.shareButton {
+    width: 20px;
+    height: 20px;
+}
+
+.saveButton {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media all and (min-width:1024px) {
+    
+    .controls {
+        max-width: 70px;
+        padding: 0px 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        order: 3;
+    }
+    
+    .karmaCounter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center
+
+    }
+
+    .karmaCounter > * + * {
+
+        padding: 0 0 0 4px;
+    }
+
+    
+    svg.down {
+        transform: rotate(180deg);
+    }
+    
+    .commentsButton {
+        display: none;
+        align-items: normal;
+    }
+    
+    .commentsButton {
+        color: var(--greyC4);
+    }
+    
+    .commentsNumber {
+        display: none;
+        padding: 0 0 0 6px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .shareButton {
+        display: none;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .saveButton {
+        display: none;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media all and (min-width: 1540px) {
+   
+
+    .karmaCounter > button.up:hover > svg > path {
+        transition: fill 0.5s;
+        fill: var(--green);
+    }
+    
+    .karmaCounter > button.down:hover > svg > path {
+        transition: fill 0.5s;
+        fill: var(--orange);
+    }
+
+
+    .controls {
+        position: relative;
+    }
+
+    .postLink::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+}

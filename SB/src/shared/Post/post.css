@@ -1,0 +1,12 @@
+.modal {
+    position: absolute;
+    width: 50%;
+    height: max-content;
+    top: 100px;
+    left: calc(25%);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    padding: 40px 20px;
+    z-index: 2;
+}

@@ -1,0 +1,1 @@
+import { pickFromSyntheticEvent } from "./pickFromSyntheticEvent";
